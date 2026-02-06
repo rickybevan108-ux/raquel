@@ -1,139 +1,125 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="UTF-8">
 <title>For Raquel 💛</title>
 
 <style>
 body{
-margin:0;
-min-height:100vh;
-display:grid;
-place-items:center;
-background:radial-gradient(circle at top,#2b2b40,#0b0b12);
+background:#0b0b12;
 color:white;
-font-family:system-ui;
+font-family:Arial;
+margin:0;
+padding:20px;
 }
 
-.card{
-width:min(800px,94vw);
-background:rgba(255,255,255,.08);
-border:1px solid rgba(255,255,255,.15);
-border-radius:22px;
-padding:24px;
-box-shadow:0 20px 60px rgba(0,0,0,.4);
+.box{
+background:#1b1b2a;
+padding:25px;
+border-radius:15px;
+max-width:900px;
+margin:auto;
 }
 
 input{
 width:100%;
-padding:14px;
-border-radius:14px;
-border:1px solid rgba(255,255,255,.2);
-background:rgba(0,0,0,.3);
-color:white;
-font-size:16px;
+padding:10px;
+margin-top:10px;
+border-radius:6px;
+border:none;
 }
 
 button{
-margin-top:14px;
-padding:12px 18px;
-border-radius:14px;
+margin-top:10px;
+padding:10px;
+width:100%;
+background:pink;
 border:none;
-background:#ffd1dc;
-font-weight:700;
+font-weight:bold;
 cursor:pointer;
 }
 
 .hidden{display:none;}
-.err{color:#ffb3b3;margin-top:10px;display:none;}
+.error{color:red;margin-top:10px;}
 
 .gallery{
-margin-top:16px;
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+grid-template-columns:repeat(2,1fr);
 gap:12px;
+margin-top:15px;
 }
 
 .gallery img{
 width:100%;
-height:auto;
-aspect-ratio:3 / 4;
-object-fit:contain;
-border-radius:16px;
+height:220px;
+object-fit:cover;
+border-radius:15px;
 border:1px solid rgba(255,255,255,.2);
-background:black;
-max-height:320px;
+}
+
+/* Floating hearts */
+
+.heart{
+position:fixed;
+bottom:-20px;
+pointer-events:none;
+animation:floatUp linear forwards;
+opacity:.8;
+}
+
+@keyframes floatUp{
+from{transform:translateY(0) scale(1);opacity:1;}
+to{transform:translateY(-110vh) scale(1.6);opacity:0;}
 }
 </style>
 </head>
 
 <body>
 
-<div class="card" id="lock">
-<h1>Unlock this 💛</h1>
-<p>Enter the secret phrase Ricky gave you.</p>
+<div class="box" id="login">
 
-<input id="phrase" placeholder="secret phrase…">
-<button id="unlock">Unlock ✨</button>
-<div class="err" id="err">Not quite 🙈</div>
+<h2>Enter Secret Password 💛</h2>
 
-<p style="opacity:.7;font-size:13px;margin-top:14px;">Private. Nothing is saved.</p>
+<input id="pass" placeholder="Password">
+
+<button onclick="unlock()">Unlock</button>
+
+<div class="error hidden" id="err">Wrong password</div>
+
 </div>
 
-<div class="card hidden" id="content">
+<div class="box hidden" id="message">
 
-<h1>For you Raquel 💖</h1>
+<h2>Ricky ❤️</h2>
+<h3>Us 🥰</h3>
 
 <p style="white-space:pre-wrap;line-height:1.6">
 
-Well if your reading this, omgg I can't believe you are actually reading it now, I wish I was there with u when your reading this. I need to tell you this message isn't written by ai it's written by me, and also read it privately alone okay pleasee.
+Well if your reading this, omgg I can't believe you are actually reading it now, I wish I was there with u when your reading this.
 
-Okay let me start,
+This message isn't written by AI — it's from me.
 
-I still remember I was scared how I am gonna take care of hadrian and still love u, when we were dating initially , I had a lot of doubts. But slowly I started to learn and became close to him too , ukw I will try to be his best friend instead of being his mom bf in the future too.
+I still remember being scared how I would take care of Hadrian and still love you. Slowly I learned and became close to him too.
 
-But the more I got to know about u, like how much struggles u had gone through and still u gave your best to make other happy that quality really made me feel good, because even I'm like that and you were so honest and pure.
+The more I knew you, the more I admired your strength and purity.
 
-Yes we might have a few difference here and there but still ik we can overcome that and love happily.
+When I got laid off, you still stayed with me. That meant everything.
 
-When I got laid off , I honestly thought ukw it's over, she's single mom why would she want to date a jobless guy atleast for the time being but u still continued to date me and trusted me and backed me.
+Gym day, Philippines food day — that’s when I knew.
 
-That made me feel so confident and felt , ukw even I have someone to back me even when the worse of the worse things are happening towards me.
+I felt safe, happy, loved.
 
-We went on multiple dates but the day I started to get feeling on you was during that date u and me went to the gym and ate Phillipines food and chilled together alone as one , I got a different feeling, I don't know how to explain. I felt safe, happy, loved and felt fun.
+My gut told me: Ricky, this is your woman.
 
-Idk my gut was telling me ukw this is it.
+No matter what happens — job, distance, life — I promise to stand by you.
 
-Ik we had a lot of issues from different people in the past who tried to manipulate me from not dating u ,I don't wanna pull up their names u know them already but still my gut told me , ukw ricky raquel is your women, please never let go off her and stay with her.
+I love you now and forever.
 
-Ik the journey will be hard with hadrian, but I think I can make it happen and keep both of u happy.
-
-Well idk when your reading this I have a job or no, but I'm trying to get my dream job so please be a little patient with me if I don't have one too.
-
-I will back u until eternity haha.
-
-About me going back to my country, honestly I don't know what's gonna happen on that but we can manage it.
-
-Don't worry about your mum, your grandparents , your ex partner and other issues I'm here for u always okay.
-
-I love you now, and forever until eternity.
-
-Thank you for being such a wonderful human being in my life.
-
-I promise you with my all heart , i will be your last date, last lover, last boyfriend and first husband.
-
-Finally I can call Raquel as my babe, bae, boo and my everything.
-
-Praise the lord.
-
-Honey(u) and bee(me).
+Honey (you) and bee (me).
 
 Love,
 Ricky ❤️
 </p>
-
-<h3>Us 🥰</h3>
 
 <div class="gallery">
 <img src="Screenshot_20260205_224339_Gallery.jpg">
@@ -145,18 +131,31 @@ Ricky ❤️
 </div>
 
 <script>
+const PASSWORD="IloveURicky";
 
-const SECRET = "RickyandRaquel";
-
-document.getElementById("unlock").onclick = ()=>{
-if(document.getElementById("phrase").value.trim()===SECRET){
-document.getElementById("lock").classList.add("hidden");
-document.getElementById("content").classList.remove("hidden");
+function unlock(){
+let p=document.getElementById("pass").value;
+if(p===PASSWORD){
+document.getElementById("login").classList.add("hidden");
+document.getElementById("message").classList.remove("hidden");
 }else{
-document.getElementById("err").style.display="block";
+document.getElementById("err").classList.remove("hidden");
 }
-};
+}
 
+// floating hearts
+function createHeart(){
+const heart=document.createElement("div");
+heart.className="heart";
+heart.innerHTML=["❤️","💖","💕","💘","💞"][Math.floor(Math.random()*5)];
+heart.style.left=Math.random()*100+"vw";
+heart.style.animationDuration=(4+Math.random()*3)+"s";
+heart.style.fontSize=(16+Math.random()*20)+"px";
+document.body.appendChild(heart);
+setTimeout(()=>heart.remove(),7000);
+}
+
+setInterval(createHeart,500);
 </script>
 
 </body>
