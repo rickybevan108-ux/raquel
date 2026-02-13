@@ -84,7 +84,7 @@
       position: relative;
       height: 100%;
       width: 100%;
-      background-image: url("tulips.jpg"); /* heavenly tulip field */
+      background-image: url("tulips.png"); /* heavenly tulip field */
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -245,7 +245,7 @@
       </div>
 
       <!-- her cut-out picture -->
-      <img src="1000047460-removebg-preview.jpg" alt="Raquel" class="crush">
+      <img src="1000047460-removebg-preview.png" alt="Raquel" class="crush">
     </div>
   </div>
 
