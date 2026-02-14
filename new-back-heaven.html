@@ -358,7 +358,7 @@
   <script>
     function playYouTubeAudio() {
       const wrapper = document.getElementById("ytAudioWrapper");
-      const videoId = "IpFX2vq8HKw"; // blue – yung kai
+      const videoId = "21XOT_a6z84"; // instrumental video ID
 
       wrapper.innerHTML = `
         <iframe
@@ -381,7 +381,7 @@
         document.getElementById("passwordScreen").style.display = "none";
         document.getElementById("secretContent").style.display = "block";
 
-        // Start the song after successful password (counts as user interaction)
+        // Start instrumental after successful password
         playYouTubeAudio();
       } else {
         alert("Wrong password, try again.");
