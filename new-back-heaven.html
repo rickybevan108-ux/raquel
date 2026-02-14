@@ -1,4 +1,6 @@
+Here’s your code with the YouTube audio for “blue” by yung kai added so it starts playing (looped, audio‑only style) after the correct password is entered.
 
+xml
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -298,6 +300,9 @@
 </head>
 <body>
 
+  <!-- Hidden YouTube audio container -->
+  <div id="ytAudioWrapper" style="position: fixed; width:1px; height:1px; bottom:0; right:0; overflow:hidden;"></div>
+
   <!-- Password screen -->
   <div class="password-screen" id="passwordScreen">
     <div class="password-card">
@@ -353,6 +358,23 @@
   </div>
 
   <script>
+    function playYouTubeAudio() {
+      const wrapper = document.getElementById("ytAudioWrapper");
+      const videoId = "IpFX2vq8HKw"; // blue – yung kai
+
+      wrapper.innerHTML = `
+        <iframe
+          width="1"
+          height="1"
+          src="https://www.youtube.com/embed/${videoId}?autoplay=1&loop=1&playlist=${videoId}&controls=0&rel=0&showinfo=0"
+          title="YouTube audio"
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen>
+        </iframe>
+      `;
+    }
+
     function checkPassword() {
       const input = document.getElementById("pw").value;
       const realPassword = "raquel";
@@ -360,6 +382,9 @@
       if (input === realPassword) {
         document.getElementById("passwordScreen").style.display = "none";
         document.getElementById("secretContent").style.display = "block";
+
+        // Start the song after successful password (counts as user interaction)
+        playYouTubeAudio();
       } else {
         alert("Wrong password, try again.");
       }
